@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_URL = "http://localhost:5000/api/foods";
+const API_URL = "https://food-management-backend-yixu.onrender.com/api/foods";
 
 const emptyForm = {
   foodId: "",

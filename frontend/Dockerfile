@@ -1,3 +1,5 @@
+# Stage 1: Build React application
+
 FROM node:22-alpine AS builder
 
 WORKDIR /app
@@ -7,6 +9,8 @@ RUN npm ci
 
 COPY . .
 RUN npm run build
+
+# Stage 2: Serve application using Nginx
 
 FROM nginx:alpine
 
