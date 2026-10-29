@@ -79,9 +79,21 @@ Thông tin kết nối được cấu hình bằng biến môi trường và kh�
 
 ## 9. Triển khai
 
-Backend và frontend được đóng gói bằng Docker, lưu trữ image trên Docker Hub và triển khai trên Render.
+Frontend và backend được đóng gói bằng Docker, lưu trữ image trên Docker Hub và triển khai công khai trên Render. Backend sử dụng MongoDB Atlas làm cơ sở dữ liệu.
 
-URL triển khai sẽ được bổ sung sau khi hoàn thành.
+9.1. URL triển khai trên Render
+Frontend: https://food-management-frontend-2e5b.onrender.com/
+Backend API: https://food-management-backend-yixu.onrender.com
+Health check: https://food-management-backend-yixu.onrender.com/health
+API danh sách món ăn: https://food-management-backend-yixu.onrender.com/api/foods
+9.2. Docker Hub
+Frontend image: https://hub.docker.com/repository/docker/francit/food-management-frontend
+Backend image: https://hub.docker.com/repository/docker/francit/food-management-backend
+9.3. Kiểm tra triển khai
+Frontend truy cập được qua URL công khai.
+Backend API trả về trạng thái hoạt động thành công.
+Endpoint /health xác nhận backend đang chạy và đã kết nối MongoDB Atlas.
+Các chức năng thêm, xem, tìm kiếm, cập nhật và xóa món ăn đã được kiểm tra trên hệ thống triển khai.
 
 ## 10. Thông tin sinh viên
 
